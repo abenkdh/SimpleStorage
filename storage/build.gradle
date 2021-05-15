@@ -50,36 +50,3 @@ dependencies {
     testImplementation "org.powermock:powermock-api-mockito2:2.0.5"
     testImplementation "org.powermock:powermock-module-junit4:2.0.5"
 }
-
-ext {
-    // POM
-    POM_ARTIFACT_ID = archivesBaseName
-    VERSION_NAME = version
-
-    POM_NAME = archivesBaseName
-    POM_PACKAGING = 'aar'
-    POM_DESCRIPTION = 'Simplify Android Storage Access Framework for file management across API levels.'
-
-    // Project
-    VCS_URL = "https://github.com/anggrayudi/SimpleStorage.git"
-    GROUP = "com.anggrayudi"
-
-    // POM Project
-    POM_URL = "https://github.com/anggrayudi/SimpleStorage"
-
-    // POM SCM
-    POM_SCM_URL = "https://github.com/anggrayudi/SimpleStorage"
-    POM_SCM_CONNECTION = "scm:git:git://github.com/anggrayudi/SimpleStorage.git"
-    POM_SCM_DEV_CONNECTION = "scm:git:ssh://github.com:anggrayudi/SimpleStorage.git"
-
-    // POM Licenses
-    POM_LICENCE_NAME = "The Apache Software License, Version 2.0"
-    POM_LICENCE_URL = "https://github.com/anggrayudi/SimpleStorage/blob/master/LICENSE"
-
-    // POM Developers
-    POM_DEVELOPER_ID = "anggrayudi"
-    POM_DEVELOPER_NAME = "Anggrayudi H"
-    POM_DEVELOPER_URL = "https://github.com/anggrayudi/"
-}
-
-apply plugin: "com.vanniktech.maven.publish"
